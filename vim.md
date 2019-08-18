@@ -19,7 +19,7 @@ of them may not work in your specific situation , checking my
 do not use may not be listed here, if you want to check a full list I recommend 
 going to the official vim documentation
 
-## Comands
+## Basic vim commands
 
 ### Movement commands
 
@@ -200,3 +200,46 @@ Same commands as in normal mode
 
 `v` : Enters visual selection mode
 
+## Plugings 
+
+#### NerdTree
+
+**Note**: In order to move in the tree itself normal vim movement keys are used
+
+`<ctrl>m` : While not in nerdtree open a close the tree window
+
+`?` : While on nerdtree to open a help menu
+
+##### Directory control
+
+`o` : Opens and closes the directory where the cursor is placed, in case that is 
+a file instead of a directory that will open said file in the last editor window
+used
+
+`x` : Closes the current folder node 
+
+`p` : Go to parent node 
+
+`P` : Go to root node
+
+`C` : Change root to selected directory
+
+`R` : Refresh root directory
+
+`I` : Show all hidden files
+
+##### Creating and renaming files
+
+`m` : Opens contextual menu that allows you to rename, delete etc files
+
+##### Opening files
+
+`o` : Open file in the last editor window used
+
+`s` : Open file in a new vertical split
+
+`i` : Open a file in a new horizontal split
+
+`t` : Open file in a new tab
+
+`T` : Open a file in a new tab without jumping to it
