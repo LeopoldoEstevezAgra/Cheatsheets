@@ -24,24 +24,36 @@
 *Note*: All commands are used with the prefix "ctrl + b " as leading keys
 
  `c`:  Create window
+
  `w`:  List windows
+
  `n`:  Next window
+
  `p`:  Previous window
+
  `f`:  Find window
+
  `,`:  Name window
+
  `&`:  Kill window
 
 ## Panel management
 
  `%`: Vertical split
+
  `"`: Horizontal split
+
  `x`: Kill panel
+
  `{``}`: Move panels to previous and next position. 
+
  `!`: Move current panel into a new window
 
 ## Panel movement 
 
  `directional arrows`: Move to the panel in the given direccion 
+
  `o`: Move to the the next panel ( cycle )
+
  `q + panel number` : Shows panels numbers and if jump to them if pressed
 
