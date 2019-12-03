@@ -1,13 +1,13 @@
 # *Tmux cheatsheet*
 
 
-## Session management 
+## Session management
 
 ### New session
 
 `tmux new -s {{sessionName}}` : Starts a new session with an specific name
 
-### List sessions 
+### List sessions
 
 `tmux ls`
 
@@ -15,13 +15,13 @@
 
 `tmux a -t {{sessionName}}`
 
-### Kill session 
+### Kill session
 
 `tmux kill-session -t {{sessionName}}`: Kills an specific session
 
 ## Window management
 
-*Note*: All commands are used with the prefix "ctrl + b " as leading keys
+*Note*: All commands are used with the prefix "ctrl + a " as leading keys
 
  `c`:  Create window
 
@@ -39,19 +39,19 @@
 
 ## Panel management
 
- `%`: Vertical split
+ `-`: Vertical split
 
- `"`: Horizontal split
+ `_`: Horizontal split
 
  `x`: Kill panel
 
- `{``}`: Move panels to previous and next position. 
+ `{``}`: Move panels to previous and next position.
 
  `!`: Move current panel into a new window
 
-## Panel movement 
+## Panel movement
 
- `directional arrows`: Move to the panel in the given direccion 
+ `directional arrows`: Move to the panel in the given direccion
 
  `o`: Move to the the next panel ( cycle )
 
