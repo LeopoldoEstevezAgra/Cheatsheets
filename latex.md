@@ -49,7 +49,7 @@ Documentclass options :
 * graphicx : Allows the user to insert images and graphs
 * hyperref : Allows the user to add inner and external links on the document
 * anysize : Changes the margins `\marginsize{l}{r}{t}{b}`
-
+* listings: Allows to code segments
 ##### Titles and general information
 
 ** Note ** : These go before the `\begin{document}` tag.
@@ -78,6 +78,9 @@ The following tags add structure to the document and are readed by the
 
 If used any of the previous tags with the `*` modifier those will not appear in
 the table of contents `\section*{title}`
+
+* `\begin{minipage}` : Allows to contain a text, figure or code segment on a separated
+page
 
 ##### Text enviroments
 
@@ -124,7 +127,38 @@ From within the list block the diffent elements can be placed with the
 
 **Note** : Is worth noting that list can be nested
 
+### Code
 
+In order to use code highlight is necesary to add the package `listings`
+
+Code segments must be contained in between `\begin{lstlisting}` and `\end{lstlisting}`
+
+Is important to note that code will not have any particular formating until said
+formating is defined, to do that is necesary specify it at the begining of the document
+( In the metadata segment ) using `lstset{}` , an example of this for C code could be :
+
+```
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+        commentstyle=\color{gray},
+        frame=single,
+        linewidth=\textwidth,
+        numbers=left,
+        breaklines=true,
+        numbersep=5pt,
+        numberstyle=\tiny\color{gray},
+        rulecolor=\color{black},
+        keywordstyle=\color{blue},
+        stringstyle=\color{red},
+        commentstyle=\color{gray},
+        backgroundcolor=\color[HTML]{f7f7f7},
+        morecomment=[l][\color{magenta}]{\#},
+        extendedchars=true,
+        language=C,
+        literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+                {ñ}{{\~n}}1,
+}
+```
 
 
 
